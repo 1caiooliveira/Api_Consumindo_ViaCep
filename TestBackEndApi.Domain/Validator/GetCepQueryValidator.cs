@@ -8,7 +8,7 @@ namespace TestBackEndApi.Domain.Queries.Cep.Validator
         public GetCepQueryValidator()
         {
             RuleFor(_request => _request.Cep).NotEmpty().WithMessage("Informe o Cep!")
-                .Length(9).WithMessage("O campo CEP precisa ter 9 digitos!");
+                .Length(8).WithMessage("O campo CEP precisa ter 8 digitos!");
         }
     }
 }
