@@ -8,7 +8,6 @@ namespace TestBackEndApi.Domain.Queries.Cep.Get
     public class GetCepQuery : Validate, IRequest<GetCepQueryResponse>
     {
         public string Cep { get; set; }
-        public bool Json { get; set; }
 
         public override bool IsValid()
         {
